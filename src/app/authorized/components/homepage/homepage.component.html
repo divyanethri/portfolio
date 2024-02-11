@@ -1,0 +1,33 @@
+<div class="homepage">
+  <div class="color-body"></div>
+  <div class="profile d-flex flex-row">
+    <div class="image">
+      <img class="img-40" [src]="data?.profile?.image" alt="profile-image" />
+    </div>
+    <div class="overview d-flex flex-column justify-content-center">
+      <div class="overview-heading d-flex flex-column align-items-center">
+        <span class="name text-uppercase">
+          <span><i class="bi bi-dash-lg dash"></i></span>
+          I'm {{ data?.profile?.name }}.
+        </span>
+        <span class="job-role text-uppercase">
+          {{ data?.profile?.role }}
+        </span>
+      </div>
+      <div class="job-overview">
+        {{ data?.profile?.introduction }}
+      </div>
+      <div class="more-about">
+        <button
+          class="d-flex flow-row about-button align-items-center"
+          routerLink="/about"
+        >
+          <span class="about-text text-uppercase">More About me</span>
+          <span
+            ><div class="right-arrow"><i class="bi bi-arrow-right"></i></div
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,213 @@
+<div class="base-container">
+  <div class="main-container d-flex flex-column">
+    <div class="about-heading d-flex justify-content-center">
+      <div class="resume-text d-flex text-uppercase">
+        resume
+        <div class="about-text d-flex">
+          <span class="about-text1 text-uppercase">about </span>
+          <span class="about-text2 text-uppercase"> me </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="info-overview col-sm-12 d-flex flex-row justify-content-between"
+    >
+      <div class="info col-sm-6 d-flex flex-column">
+        <div class="personal-info text-uppercase">Personal Infos</div>
+        <div class="info-container d-flex flex-row">
+          <div class="info-col1">
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> first name : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.firstName }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> last name : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.lastName }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> age : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.age }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> nationality : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.nationality }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> freelance : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.freelance }}
+              </span>
+            </div>
+          </div>
+          <div class="info-col2">
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> address : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.address }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> phone : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.phone }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> email : </span>
+              <span class="info-text2 text-capitalize">
+                {{ data.personalInfo.email }}
+              </span>
+            </div>
+            <div class="info-details">
+              <span class="info-text1 text-capitalize"> languages : </span>
+              <span
+                *ngFor="let element of data.personalInfo.languages"
+                class="info-text2 text-capitalize"
+              >
+                {{ element }}
+                <ng-container *ngIf="!last">, </ng-container>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-cv">
+          <a class="anchor-tag" href="https://rb.gy/hm91w" target="_blank">
+            <button
+              class="d-flex flow-row download-button align-items-center"
+              href="https://rb.gy/hm91w"
+            >
+              <span class="download-text text-uppercase">Download cv</span>
+              <span
+                ><div class="download-icon"><i class="bi bi-download"></i></div
+              ></span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="overview-info d-flex flex-column col-sm-6">
+        <div class="overview-row-1 d-flex flex-row">
+          <div class="overview-card">
+            <div class="inner-card">
+              <div class="card-row1">
+                {{ data.profileOverview.experience }}+
+              </div>
+              <div class="card-row2 d-flex flex-row">
+                <div class="card-row2-col-1">
+                  <div class="horizontal-line"></div>
+                </div>
+                <div class="card-row2-col-2 text-uppercase">
+                  years of <br />experience
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="inner-card">
+              <div class="card-row1">{{ data.profileOverview.skills }}+</div>
+              <div class="card-row2 d-flex flex-row">
+                <div class="card-row2-col-1">
+                  <div class="horizontal-line"></div>
+                </div>
+                <div class="card-row2-col-2 text-uppercase">
+                  Total <br />Skills
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overview-row-2 d-flex flex-row">
+          <div class="overview-card">
+            <div class="inner-card">
+              <div class="card-row1">{{ data.profileOverview.projects }}+</div>
+              <div class="card-row2 d-flex flex-row">
+                <div class="card-row2-col-1">
+                  <div class="horizontal-line"></div>
+                </div>
+                <div class="card-row2-col-2 text-uppercase">
+                  Total <br />
+                  Projects
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-card">
+            <div class="inner-card">
+              <div class="card-row1">
+                {{ data.profileOverview.achievements }}+
+              </div>
+              <div class="card-row2 d-flex flex-row">
+                <div class="card-row2-col-1">
+                  <div class="horizontal-line"></div>
+                </div>
+                <div class="card-row2-col-2 text-uppercase">
+                  Awards <br />
+                  & rewards
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line d-flex"></div>
+    <div class="skills-section d-flex flex-column align-items-center">
+      <div class="heading text-uppercase">my skills</div>
+      <div class="skills d-flex">
+        <div *ngFor="let skill of data.skills" class="skill-card">
+          <div class="inner-card d-flex flex-column align-items-center">
+            <div class="logo-container">
+              <img
+                class="img-40"
+                [src]="skill.logo"
+                alt="{{ skill.skillName }} Logo"
+              />
+            </div>
+            <div class="skill-name">{{ skill.skillName }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line d-flex"></div>
+    <div class="experience-section d-flex flex-column">
+      <div class="heading text-uppercase d-flex flex-column align-items-center">
+        experience & education
+      </div>
+      <div *ngFor="let element of data.experienceType" class="experience-body d-flex flex-row  align-items-center col-sm-6">
+        <div class="left-col d-flex flex-column">
+          <div
+            class="exp-icon d-flex justify-content-center align-items-center"
+          >
+            <i class="bi bi-briefcase-fill briefcase-icon"></i>
+          </div>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="right-col d-flex flex-column">
+          <div class="d-flex text-align-center">
+            <div class="duration">{{element.duration.start}} - {{element.duration.end}}</div>
+          </div>
+          <div class="exp-heading d-flex flex-row">
+            <div class="exp-text1 text-uppercase">{{element.role}}</div>
+            <span
+              ><i
+                class="bi bi-dash-lg d-flex justify-content-center exp-dash"
+              ></i
+            ></span>
+            <div class="exp-text2">{{element.organisation}}</div>
+          </div>
+          <div class="exp-context">
+            {{element.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
