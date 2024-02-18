@@ -2,20 +2,20 @@
   <div class="yellow-body"></div>
   <div class="profile d-flex justify-content-center">
     <div class="image">
-      <img class="img-40" [src]="data?.profile?.image" alt="profile-image" />
+      <img class="img-40" [src]="data.profile.image" alt="profile-image" />
     </div>
     <div class="overview d-flex flex-column justify-content-center">
       <div class="overview-heading d-flex flex-column align-items-center">
         <span class="name text-uppercase">
           <span><i class="bi bi-dash-lg dash"></i></span>
-          I'm {{ data?.profile?.name }}.
+          I'm {{ data.profile.name }}.
         </span>
         <span class="job-role text-uppercase">
-          {{ data?.profile?.role }}
+          {{ data.profile.role }}
         </span>
       </div>
       <div class="job-overview">
-        {{ data?.profile?.introduction }}
+        {{ data.profile.introduction }}
       </div>
       <div class="more-about d-flex">
         <button
