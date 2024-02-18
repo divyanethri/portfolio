@@ -1,7 +1,7 @@
 export const portfolioData = {
     profile: {
       name: "Ankith Pal",
-      role: "web designer",
+      role: "full stack developer",
       introduction: "I'm a skilled software developer with experience in React Js, Angular, .Net Core, Node Js, Express Js, TypeScript, JavaScript, MongoDb, Sql, Java, Python, I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!",
       image: "./assets/ankith-pal.jpg"
     },

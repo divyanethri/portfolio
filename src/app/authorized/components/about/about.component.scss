@@ -201,7 +201,7 @@
       }
     }
     .experience-section {
-      padding-bottom:10%;
+      padding-bottom: 10%;
       .experience-body {
         .left-col {
           .exp-icon {
@@ -214,8 +214,8 @@
             }
           }
           .vertical-line {
-            border: 1px solid #212121; 
-            height: 100px; 
+            border: 1px solid #212121;
+            height: 100px;
             align-self: center;
           }
         }
@@ -251,7 +251,7 @@
               margin: 7px 0 10px;
             }
           }
-          .exp-context{
+          .exp-context {
             color: #eee;
             font-size: 14px;
           }
@@ -262,4 +262,315 @@
 }
 .anchor-tag {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 426px) {
+  .base-container {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    overflow-y: auto;
+    .main-container {
+      margin: 0 10% 3% 10%;
+      padding-top: 3%;
+      margin-bottom: 3%;
+      height: 100%;
+      .about-heading {
+        position: relative;
+        z-index: 1;
+        .resume-text {
+          position: relative;
+          color: #212121;
+          font-size: 45px;
+          letter-spacing: 10px;
+          font-weight: 800;
+          align-items: center;
+          justify-content: center;
+        }
+        .about-text {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          position: absolute;
+          top: 20px;
+          letter-spacing: 1px;
+          margin-left: 117px;
+          z-index: 2;
+          .about-text1 {
+            margin-top: 20px;
+            z-index: 1;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  // .base-container {
+  //   display: block;
+  //   height: 100%;
+  //   margin: 0;
+  //   padding: 0;
+  //   box-sizing: border-box;
+  //   background-color: #111111;
+  //   overflow-y: auto;
+  //   .main-container {
+  //     margin: 0 10% 3% 10%;
+  //     padding-top: 3%;
+  //     margin-bottom: 3%;
+  //     height: 100%;
+  //     .about-heading {
+  //       position: relative;
+  //       z-index: 1;
+  //       .resume-text {
+  //         position: relative;
+  //         color: #212121;
+  //         font-size: 54px;
+  //         letter-spacing: 10px;
+  //         font-weight: 800;
+  //         align-items: center;
+  //         justify-content: center;
+  //         .about-text {
+  //           display: flex;
+  //           align-items: center;
+  //           font-size: 30px;
+  //           position: absolute;
+  //           top: 20px;
+  //           letter-spacing: 1px;
+  //           margin-left: 117px;
+  //           z-index: 2;
+  //           .about-text1 {
+  //             margin-top: 20px;
+  //             z-index: 1;
+  //             color: #ffffff;
+  //           }
+  //           .about-text2 {
+  //             margin-left: 6px;
+  //             margin-top: 20px;
+  //             z-index: 1;
+  //             color: #ffb400;
+  //           }
+  //         }
+  //       }
+  //     }
+  //     .info-overview {
+  //       margin-top: 4%;
+  //       .info {
+  //         .personal-info {
+  //           color: #ffffff;
+  //           font-size: 26px !important;
+  //           font-weight: 700 !important;
+  //         }
+  //         .info-container {
+  //           margin-top: 25px;
+  //           .info-text1 {
+  //             color: #abb8c3;
+  //             font-weight: 500 !important;
+  //           }
+  //           .info-text2 {
+  //             color: #ffffff;
+  //             font-weight: 700 !important;
+  //           }
+  //           .info-details {
+  //             margin-top: 20px;
+  //           }
+  //           .info-col2 {
+  //             margin-left: 100px;
+  //           }
+  //         }
+  //         .download-cv {
+  //           margin-top: 30px;
+  //           .download-button {
+  //             background-color: #111111;
+  //             border-radius: 50px;
+  //             border: 1px solid #ffb400;
+  //             text-decoration: none;
+  //             position: relative;
+  //             overflow: hidden;
+  //             transition: color 0.5s ease, background-color 0.5s ease;
+  //             .download-text {
+  //               color: #ffffff;
+  //               font-weight: 500;
+  //               margin-left: 30px;
+  //             }
+  //             .download-icon {
+  //               color: #ffffff;
+  //               border-color: #ffb400;
+  //               margin-left: 33px;
+  //               padding: 15px 0px 15px 0px;
+  //               background-color: #ffb400;
+  //               width: 54px;
+  //               border-radius: 50%;
+  //             }
+  //           }
+  //           .download-button::before {
+  //             content: "";
+  //             position: absolute;
+  //             top: 0;
+  //             left: 0;
+  //             width: 100%;
+  //             height: 100%;
+  //             background: linear-gradient(
+  //               to right,
+  //               transparent,
+  //               transparent 100%
+  //             );
+  //             transform: translateX(-100%);
+  //             transition: transform 0.5s ease;
+  //           }
+
+  //           .download-button:hover {
+  //             color: #3498db;
+  //             background-color: #ffb400;
+  //           }
+
+  //           .download-buttonhover::before {
+  //             transform: translateX(0);
+  //           }
+
+  //           .download-button:active {
+  //             transform: scale(0.95);
+  //           }
+  //         }
+  //       }
+  //       .overview-info {
+  //         gap: 30px;
+  //         .overview-row-1 {
+  //           gap: 30px;
+  //         }
+  //         .overview-row-2 {
+  //           gap: 30px;
+  //         }
+  //         .overview-card {
+  //           border: 0.001px solid #212121;
+  //           border-radius: 3px;
+  //           .inner-card {
+  //             width: 259px;
+  //             padding: 20px 40px 40px 40px;
+  //             .card-row1 {
+  //               font-size: 55px;
+  //               font-weight: 700;
+  //               color: #ffb400;
+  //             }
+  //             .card-row2 {
+  //               color: white;
+  //               .horizontal-line {
+  //                 color: #abb8c3;
+  //                 border: 1px solid #abb8c3;
+  //                 width: 38px;
+  //                 margin-top: 16px;
+  //               }
+  //               .card-row2-col-2 {
+  //                 margin-left: 16px;
+  //                 font-size: large;
+  //                 font-weight: 500;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //     .line {
+  //       border: 1px solid #212121;
+  //       width: 37%;
+  //       margin-top: 5%;
+  //       margin-bottom: 4%;
+  //       align-self: center;
+  //     }
+  //     .heading {
+  //       color: #ffffff;
+  //       font-size: 25px;
+  //       font-weight: 700;
+  //     }
+  //     .skills-section {
+  //       .skills {
+  //         flex-flow: wrap;
+  //         gap: 87px;
+  //         justify-content: center;
+  //         margin-top: 5%;
+  //         .skill-card {
+  //           border: 0.001px solid #212121;
+  //           border-radius: 10px;
+  //           .skill-name {
+  //             margin-top: 10px;
+  //             color: #ffffff;
+  //           }
+  //           .inner-card {
+  //             width: 199px;
+  //             padding: 30px 50px 30px 50px;
+  //           }
+  //           .skill-name {
+  //             font-size: 16px;
+  //             font-weight: 700;
+  //           }
+  //         }
+  //         .img-40 {
+  //           height: 40px;
+  //           width: 40px;
+  //         }
+  //       }
+  //     }
+  //     .experience-section {
+  //       padding-bottom:10%;
+  //       .experience-body {
+  //         .left-col {
+  //           .exp-icon {
+  //             background-color: #ffb400;
+  //             width: 40px;
+  //             height: 40px;
+  //             border-radius: 50%;
+  //             .briefcase-icon {
+  //               color: #ffff;
+  //             }
+  //           }
+  //           .vertical-line {
+  //             border: 1px solid #212121;
+  //             height: 100px;
+  //             align-self: center;
+  //           }
+  //         }
+  //         .right-col {
+  //           margin-left: 40px;
+  //           .duration {
+  //             color: #abb8c3;
+  //             background-color: #212121;
+  //             border-radius: 20px;
+  //             font-weight: 600;
+  //             padding: 3px 15px;
+  //             margin-bottom: 12px;
+  //           }
+  //           .exp-heading {
+  //             .exp-text1 {
+  //               color: white;
+  //               font-size: 18px;
+  //               margin: 7px 0 10px;
+  //               font-weight: 700 !important;
+  //             }
+  //             .exp-dash {
+  //               color: #abb8c3;
+  //               margin-left: 15px;
+  //               margin-top: 12px;
+  //             }
+  //             .exp-text2 {
+  //               color: #abb8c3;
+  //               font-weight: 700;
+  //               font-size: 15px;
+  //               position: relative;
+  //               padding-left: 16px;
+  //               font-size: 18px;
+  //               margin: 7px 0 10px;
+  //             }
+  //           }
+  //           .exp-context{
+  //             color: #eee;
+  //             font-size: 14px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }

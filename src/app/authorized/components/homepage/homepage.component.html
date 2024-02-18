@@ -1,6 +1,6 @@
 <div class="homepage">
-  <div class="color-body"></div>
-  <div class="profile d-flex flex-row">
+  <div class="yellow-body"></div>
+  <div class="profile d-flex justify-content-center">
     <div class="image">
       <img class="img-40" [src]="data?.profile?.image" alt="profile-image" />
     </div>
@@ -17,7 +17,7 @@
       <div class="job-overview">
         {{ data?.profile?.introduction }}
       </div>
-      <div class="more-about">
+      <div class="more-about d-flex">
         <button
           class="d-flex flow-row about-button align-items-center"
           routerLink="/about"
